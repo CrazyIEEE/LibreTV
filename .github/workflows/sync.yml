@@ -27,8 +27,7 @@ jobs:
           upstream_sync_repo: LibreSpark/LibreTV
           upstream_sync_branch: main
           target_sync_branch: main
-          target_repo_token: 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
-
+          target_repo_token: ${{ secrets.GITHUB_TOKEN }}
       - name: Sync check
         if: failure()
         run: |
